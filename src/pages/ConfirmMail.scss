@@ -1,0 +1,12 @@
+.confirm-container {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 20vh 70vh;
+}
+
+.msg {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 5vh;
+}

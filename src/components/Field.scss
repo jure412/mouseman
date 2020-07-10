@@ -1,0 +1,97 @@
+@import '../App.scss';
+.hunter1 {
+    color: rgb(61, 141, 61);
+    z-index: 3;
+}
+
+.hunter2 {
+    color: rgb(209, 192, 41);
+    z-index: 4;
+}
+
+.hunter3 {
+    color: $red;
+    z-index: 5;
+}
+
+.hunter4 {
+    color: rgb(41, 189, 209);
+    z-index: 6;
+}
+
+.hunter5 {
+    color: rgb(157, 65, 175);
+    z-index: 7;
+}
+
+.field svg {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+}
+
+
+.field-wall {
+    background: black;
+    z-index: 8;
+}
+
+
+.field-food {
+    color: gray;
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+}
+
+.field-hunters {
+    position: relative;
+    left: 0vh;
+    top: 0vh;
+    transform: translateX(0%);
+    transform: translateY(0%);
+}
+
+.field-pacman {
+    color: $blue;
+    position: relative;
+    left: 0vh;
+    top: 0vh;
+    transform: translateX(0%);
+    transform: translateY(0%);
+    z-index: 2;
+}
+
+.move-left {
+    left: 4vh;
+    top: 0vh;
+    transform: translateX(-100%);
+    transition: linear transform .105s;
+    
+}
+
+
+.move-right {
+    left: -4vh;
+    top: 0vh;
+    transform: translateX(100%);
+    transition: linear transform .105s;
+    
+}
+
+.move-top {
+    left: 0vh;
+    top: 4vh;
+    transform: translateY(-100%);
+    transition: linear transform .105s;
+}
+
+.move-bottom {
+    left: 0vh;
+    top: -4vh;
+    transform: translateY(100%);
+    transition: linear  transform .105s;
+}
+
+
+

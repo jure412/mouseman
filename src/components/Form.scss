@@ -1,0 +1,52 @@
+@import '../App.scss';
+.form {
+    background: $orangeYellow;
+    width: 320px;
+    box-shadow: 2px 2px 2px $deepBlue;
+    border-radius: 5px;
+    align-self: flex-start;
+    padding: 20px 0;
+    .msg {
+        background: $green;
+        width: 60%;
+        margin: 0 20%;
+        border-radius: 5px;
+        align-self: center;
+        justify-self: center;
+        // color:green;
+    }
+}
+
+.form-group-button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 8vh;
+    .submit-btn {
+        font-size: 1.2em;
+        padding: 5px 10px;
+        color: white;
+        transition: background 0.3s;
+        &:hover{
+            background: $green;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.login-extras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    a {
+        padding: 3px;
+        color: $blue;
+        transition: color 0.5s;
+        &:hover{
+            color: $green;
+        } 
+    }
+}

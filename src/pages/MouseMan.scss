@@ -1,0 +1,65 @@
+@import '../App.scss';
+
+.pacman {
+    background: url('../images/8bit-city.jpg');
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    
+    .pacman-container {
+        width: 60vh;
+        height: 66vh;
+        border: 1vh solid black;
+        .pacman-container-border {
+            height: 1vh;
+            width: 100%;
+            background: black;
+        }
+        .pacman-container-head {
+            height: 5vh;
+            width: 100%;
+            background-color: $orangeYellow;
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            .pacman-container-head-lives {
+                padding-left: 4vh;
+                font-size: 1.8em;
+                color: $red;
+            }
+            .pacman-container-head-points {
+                margin-right: 4vh;
+                color: $deepBlue;
+                font-size: 1.8em;
+                span {
+                    font-size: 0.8em;
+                }
+            }
+        }
+        .pacman-container-body {
+            position: absolute;
+            background-color: $deepBlue;
+            display: grid;
+            grid-template-columns: repeat(15, 4vh);
+            grid-template-rows: repeat(15, 4vh);
+            align-self: center;
+            justify-self: center;
+        }
+        
+    }
+    input {
+        height: 0;
+        border: none;
+        background: $deepBlue;
+        width: 0;
+        &:focus {
+            outline: none;
+        }
+    }
+}

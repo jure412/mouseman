@@ -1,0 +1,37 @@
+.form-group-text {
+    display: grid;
+    grid-template-areas: 
+    'label input'
+    'error error'
+    ;
+    height: 6vh;
+    width: 80%;
+    margin: 0 10%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 6fr 2fr;
+    label {
+        grid-area: label;
+        align-self: flex-end;
+        justify-self: center;
+    } 
+    input {
+        grid-area: input;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid cadetblue;
+        align-self: flex-end;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid white;
+        }
+    } 
+    p {
+        grid-area: error;
+        height: 100%;
+        text-align: right;
+        font-size: 0.8em;
+        margin: 0;
+        padding: 0;
+        color: red;
+    } 
+}

@@ -1,0 +1,23 @@
+@import '../App.scss';
+.banner {
+    background: url('../images/8bit-city.jpg');
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    
+    
+    .banner_button {
+        margin-bottom: 20%;
+        padding: 10px;
+        font-size: 1.2em;
+        border: 2px solid $deepBlue;
+        background-color: $orangeYellow;
+        align-self: center;
+        justify-self: center;
+        transition: linear .3s;
+        &:hover {
+            background-color: $red;
+        }
+    }
+    
+}

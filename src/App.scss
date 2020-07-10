@@ -1,0 +1,23 @@
+$red: rgb(218, 40, 82);
+$orangeYellow: #FFD166;
+$green: #06D6A0;
+$blue: #118AB2;
+$deepBlue: #073B4C;
+
+body {
+    color: white;
+    // font-size: ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.submit-btn {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    // margin: 10%;
+    background: $deepBlue;
+}

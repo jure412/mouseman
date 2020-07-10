@@ -1,0 +1,30 @@
+@import '../App.scss';
+.head {
+    display: grid;
+    grid-auto-flow: column;
+    background: $deepBlue;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    .logo {
+        font-size: 3em;
+    }
+    .menu {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 5%;
+    }
+    .account {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px 20px;
+        background-color: $blue;
+        color: $deepBlue;
+        text-transform: capitalize;
+        // width: 100px;
+    }
+    
+}
